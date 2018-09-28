@@ -16,6 +16,12 @@ OPTIONS:
     -h, --help       Prints help information
     -V, --version    Prints version information
 
+# Examples
+
+`lottery 5 50` - draw 5 values from 1..50 (both inclusive) without repetitions
+
+`lottery -l 2 6 45` - draw 6 values from 2..45 (both inclusive) without repetitions
+
 # Installation
 
 Currently there are no build scripts but you may `cargo build` to build an executable for your system.
