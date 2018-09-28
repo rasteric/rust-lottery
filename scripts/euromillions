@@ -1,0 +1,27 @@
+#!/bin/bash
+echo "--------------------------------------------"
+printf "\e[1;31;42m Euromillions - 5 out of 50 and 2 out of 11 \e[0m\n"
+echo "--------------------------------------------"
+echo
+echo "The official Euromillions recommender. Our suggestion is"
+echo
+if [ -f ../target/release/lottery ]
+then
+    ../target/release/lottery 5 50
+else
+    lottery 5 50
+fi
+echo
+echo "with additional numbers"
+echo
+if [ -f ../target/release/lottery ]
+then
+    ../target/release/lottery 2 11
+else
+    lottery 2 11
+fi
+echo
+echo "Thanks for playing the fucking lottery and good luck!"
+echo
+printf "\e[94m<press any key to end>"
+read -n 1 -s

@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Name=Euromillions     
+Comment=Get the latest lotto results
+Exec=bash -c "export PATH=$PATH:`dirname %k`; cd `dirname %k`; euromillions"
+Icon=./euroicon.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;
