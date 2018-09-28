@@ -2,7 +2,7 @@
 
 This command-line tool draws lottery numbers in a given range. It is written in Rust.
 
-# Usage
+## Usage
 
 `lottery [OPTIONS] <drawings> <upper_value>`
 
@@ -16,12 +16,18 @@ OPTIONS:
     -h, --help       Prints help information
     -V, --version    Prints version information
 
-# Examples
+## Examples
 
 `lottery 5 50` - draw 5 values from 1..50 (both inclusive) without repetitions
 
 `lottery -l 2 6 45` - draw 6 values from 2..45 (both inclusive) without repetitions
 
-# Installation
+## Installation
 
 Currently there are no build scripts but you may `cargo build` to build an executable for your system.
+
+## Future Plans
+
+This program is in final status and no changes are planned unless someone finds a bug.
+
+**Good luck!**
